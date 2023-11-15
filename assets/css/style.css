@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.2)), url(../images/image1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.main-heading {
+    font-size: 3rem;
+}
+
+.hero-btn {
+    width: fit-content;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 16px;
+    font-size: 18px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.hero-btn:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background: transparent !important;
+}
