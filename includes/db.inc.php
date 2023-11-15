@@ -1,12 +1,12 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=worldcup";
+$host = "localhost";
 $username = "root";
 $password = "";
+$dbname = "worldcup";
 
-try {
-    $pdo = new PDO($dsn, $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  
-} catch (PDOException $e) {
-    echo "connection to database failed ". $e->getMessage();
+$connect = mysqli_connect($host, $username, $password, $dbname);
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to db: " . mysqli_connect_error();
+    exit();
 }
