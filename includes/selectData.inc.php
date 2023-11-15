@@ -11,7 +11,6 @@ function selectTeams($connect){
             print_r("{$row["team_name"]} <br>");
         }
     }
-
 }
 
 function selectGRoups ($connect){
@@ -23,3 +22,4 @@ function selectGRoups ($connect){
         }
     }
 }
+selectTeams($connect);
