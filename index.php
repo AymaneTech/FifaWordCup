@@ -77,6 +77,9 @@ include "./includes/db.inc.php";
         include "./includes/selectGroups.php";
         ?>
     </section>
+
+
+    <script src="./assets/js/"></script>
 </body>
 
 </html>
