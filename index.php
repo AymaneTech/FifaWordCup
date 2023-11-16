@@ -64,13 +64,13 @@ include "./includes/db.inc.php";
         <div class="filter d-flex justify-content-center mb-5">
             <ul class="filter-list d-flex justify-content-center list-unstyled gap-2 flex-wrap">
                 <li class="filter-item  py-2 px-2"><a class="text-decoration-none active" href="#">View All</a></li>
-                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 1</a></li>
-                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 2</a></li>
-                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 3</a></li>
-                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 4</a></li>
-                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 5</a></li>
-                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 7</a></li>
-                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 8</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none">Group 1</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none">Group 2</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none">Group 3</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none">Group 4</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none">Group 5</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none">Group 7</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none">Group 8</a></li>
             </ul>
         </div>
         <?php
@@ -79,7 +79,7 @@ include "./includes/db.inc.php";
     </section>
 
 
-    <script src="./assets/js/"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
