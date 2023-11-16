@@ -1,7 +1,6 @@
 <?php
 include "./includes/db.inc.php";
-include "./includes/selectData.inc.php"
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +15,6 @@ include "./includes/selectData.inc.php"
 
     <title>Document</title>
 </head>
-
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light position-absolute w-100">
@@ -59,71 +57,19 @@ include "./includes/selectData.inc.php"
             <button class="hero-btn fw-bold text-black bg-white">Discover</button>
         </div>
     </section>
+
     <section class="groups">
-        <h2 class="text-center py-5">Morocco 2030 Groups</h2>
+        <div class="filter">
+            <ul>
+                <li><a href="#">veiw all</a></li>
+                <li><a href="#">veiw all</a></li>
+                <li><a href="#">veiw all</a></li>
+                <li><a href="#">veiw all</a></li>
+            </ul>
+        </div>
         <?php
-
-        function display_groups($index, $connect)
-        {
-            $sql = "SELECT * FROM teams order by group_id;";
-            $result = $connect->query($sql);
-        
-            echo "<div class='container-fluid groups-cards d-flex justify-content-between flex-wrap'>";
-            for ($i = 0; $i < 8; $i++) {
-                for ($j = 0; $j < 4; $j++) {
-                    $row = $result->fetch_assoc();
-                    echo "
-                        <div class='card p-3 my-2'>
-                            <h3 class='text-center'> Group {$row["group_id"]}</h3>
-                            <div class='groups-team d-flex flex-column gap-4 py-2'>
-                                ";
-    }
-}
-
-                echo "
-                <div class='card p-3 my-2'>
-                    <h3 class='text-center'> Group {$row["group_id"]}</h3>
-                    <div class='groups-team d-flex flex-column gap-4 py-2'>
-
-
-                    ";
-
-                print_r($team_result);
-                for ($i = 0; $i < count($team_result); $i++) {
-                    print_r($team_result[$i]);
-                }
-                echo "
-                        <div class='single-team d-flex justify-content-around border-bottom'>
-                            <img src='./assets/images/flags/algerie.png' alt='country flag'>
-                            <h4 class='team-name'>{$row["team_name"]}</h4>
-                        </div>
-                        <div class='single-team d-flex justify-content-around border-bottom'>
-                            <img src='./assets/images/flags/algerie.png' alt='country flag'>
-                            <h4 class='team-name'>{$row["team_name"]}</h4>
-                        </div>
-                        <div class='single-team d-flex justify-content-around border-bottom'>
-                            <img src='./assets/images/flags/algerie.png' alt='country flag'>
-                            <h4 class='team-name'>{$row["team_name"]}</h4>
-                        </div>
-                        <div class='single-team d-flex justify-content-around border-bottom'>
-                            <img src='./assets/images/flags/algerie.png' alt='country flag'>
-                            <h4 class='team-name'>{$row["team_name"]}</h4>
-                        </div>
-                    </div>
-                </div>
-                ";
-
-
-                $index++;
-            }
-            echo "</div>";
-        }
-
-
-        display_groups($index, $connect);
-
+        include "./includes/selectGroups.php";
         ?>
-
     </section>
 </body>
 
