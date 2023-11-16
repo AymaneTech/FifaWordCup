@@ -45,7 +45,7 @@ include "./includes/db.inc.php";
         </div>
     </nav>
 
-    <section class="hero-section d-flex align-items-center text-white">
+    <section class="hero-section d-flex align-items-center text-white mb-5">
         <div class="container d-flex flex-column gap-3">
             <h1 class="main-heading">
                 FIFA WORLD CUP 26™ <br> QUALIFIERS
@@ -59,12 +59,18 @@ include "./includes/db.inc.php";
     </section>
 
     <section class="groups">
-        <div class="filter">
-            <ul>
-                <li><a href="#">veiw all</a></li>
-                <li><a href="#">veiw all</a></li>
-                <li><a href="#">veiw all</a></li>
-                <li><a href="#">veiw all</a></li>
+        
+<h2 class="text-center py-5">Morocco 2030 Groups</h2>
+        <div class="filter d-flex justify-content-center mb-5">
+            <ul class="filter-list d-flex justify-content-center list-unstyled gap-2 flex-wrap">
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none active" href="#">View All</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 1</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 2</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 3</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 4</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 5</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 7</a></li>
+                <li class="filter-item  py-2 px-2"><a class="text-decoration-none" href="#">Group 8</a></li>
             </ul>
         </div>
         <?php
