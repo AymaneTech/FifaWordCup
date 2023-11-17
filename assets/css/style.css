@@ -54,7 +54,7 @@
 
 .filter-item a {
     border: 2px solid #000;
-    border-radius: 16px;
+    border-radius: 4px;
     transition: 0.5s;
     font-size: 16px;
     font-weight: 700;
