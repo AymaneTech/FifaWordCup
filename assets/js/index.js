@@ -18,5 +18,3 @@ filterItems.forEach(element => {
     });
 });
 
-// modal
-

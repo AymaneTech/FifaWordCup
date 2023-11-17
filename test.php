@@ -80,8 +80,6 @@ include("./selectTeams.php");
                 ?>
             </form>
         </div>
-
-
         <div class="team col-10">
             <table class="table table-striped">
                 <thead>
