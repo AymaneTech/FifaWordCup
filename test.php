@@ -1,4 +1,3 @@
-
 <!-- include "./includes/db.inc.php"; -->
 <?php
 include("./selectTeams.php");
@@ -67,12 +66,15 @@ include("./selectTeams.php");
         <h2 class="text-center py-5">Morocco 2030 Teams</h2>
         <div class='col-2 menu d-flex flex-column align_items justify-content-start mt-5'>
 
-        <form action="./selectTeams.php" method="get">
-            <?php
-            include("./selectGroup.php");
-            ?>
-            <input type="submit" value="Search" name="submit">
-        </form>
+            <form action="" method="post">
+                <?php
+                include("./selectGroup.php");
+                ?>
+                <input type="submit" value="Search" name="submit">
+                <?php
+                
+                ?>
+            </form>
         </div>
 
 
@@ -88,8 +90,19 @@ include("./selectTeams.php");
                 </thead>
                 <tbody>
                     <?php
+                    $sql = "SELECT * FROM teams;";
+                    $result = $connect->query($sql);
+                    if (isset($_POST["submit"])) {
+                        foreach ($_POST as $key) {
+                            if (is_numeric($key)) {
+                                echo $key;
+                                $sql = "SELECT * FROM teams WHERE group_id IN ($key) ORDER BY group_id;";
+                                $result = $connect->query($sql);
+                            }
+                        }
+                    }
                     display_team_table($result);
-                        ?>
+                    ?>
                 </tbody>
             </table>
         </div>
