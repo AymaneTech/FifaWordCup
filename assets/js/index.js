@@ -1,3 +1,4 @@
+console.log("hello");
 const filterItems = document.querySelectorAll(".filter-item a");
 const groupNames = document.querySelectorAll(".group-name");
 
@@ -16,3 +17,6 @@ filterItems.forEach(element => {
         });
     });
 });
+
+// modal
+
