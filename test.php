@@ -14,6 +14,8 @@ include("./selectTeams.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -70,9 +72,11 @@ include("./selectTeams.php");
                 <?php
                 include("./selectGroup.php");
                 ?>
-                <input type="submit" value="Search" name="submit">
+                <div class="mt-4">
+                    <input class="bg-dark text-white px-3 py-1 w-75" type="submit" value="Search" name="submit">
+                </div>
                 <?php
-                
+
                 ?>
             </form>
         </div>
@@ -86,6 +90,7 @@ include("./selectTeams.php");
                         <th scope="col">Flag</th>
                         <th scope="col">Country</th>
                         <th scope="col">Continent</th>
+                        <th scope="col">See More</th>
                     </tr>
                 </thead>
                 <tbody>

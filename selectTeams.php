@@ -14,6 +14,9 @@ function display_team_table($result)
             </td>
             <td>{$row["team_name"]}</td>
             <td>{$row["team_continent"]}</td>
+            <td class='d-flex justify-content-end align-items-start p-4'>
+            /<i class='bi bi-box-arrow-up-right'></i>
+            </td>
         </tr>";
     }
 }
