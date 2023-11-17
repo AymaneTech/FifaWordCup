@@ -100,7 +100,6 @@ include("./selectTeams.php");
                     if (isset($_POST["submit"])) {
                         foreach ($_POST as $key) {
                             if (is_numeric($key)) {
-                                echo $key;
                                 $sql = "SELECT * FROM teams WHERE group_id IN ($key) ORDER BY group_id;";
                                 $result = $connect->query($sql);
                             }
