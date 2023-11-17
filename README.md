@@ -32,13 +32,4 @@ To set up and run the project locally, follow these steps:
 
 ## Contributors
 
-- [Your Name](https://github.com/your-username)
-- [Another Contributor](https://github.com/another-username)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize this template based on your specific project details and requirements. Update the placeholders with actual links, names, and relevant information.
+- [Aymane El Maini](https://github.com/your-username)
